@@ -1,0 +1,15 @@
+plugins {
+  id "java"
+  id "org.jetbrains.intellij" version "0.6.5"
+}
+
+repositories {
+  mavenCentral()
+  jcenter()
+}
+
+intellij {
+  version 'IC-2020.3.2'
+  plugins = ['yaml', 'sh']
+  pluginName 'YamlInjection'
+}

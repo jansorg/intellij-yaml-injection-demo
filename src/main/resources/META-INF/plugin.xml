@@ -1,0 +1,11 @@
+<idea-plugin>
+  <id>yaml-demo</id>
+  <name>YAML Injection Demo</name>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>org.jetbrains.plugins.yaml</depends>
+  <depends>com.jetbrains.sh</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <multiHostInjector order="first" implementation="demo.DemoYamlInjector"/>
+  </extensions>
+</idea-plugin>
