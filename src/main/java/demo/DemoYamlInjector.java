@@ -3,6 +3,7 @@ package demo;
 import com.intellij.lang.injection.MultiHostInjector;
 import com.intellij.lang.injection.MultiHostRegistrar;
 import com.intellij.openapi.diagnostic.Logger;
+import com.intellij.openapi.project.DumbAware;
 import com.intellij.openapi.util.TextRange;
 import com.intellij.psi.PsiElement;
 import com.intellij.sh.ShLanguage;
@@ -13,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 @SuppressWarnings("NullableProblems")
-public class DemoYamlInjector implements MultiHostInjector {
+public class DemoYamlInjector implements MultiHostInjector, DumbAware {
     private static final Logger LOG = Logger.getInstance("#demo");
 
     @Override

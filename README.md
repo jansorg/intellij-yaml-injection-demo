@@ -8,9 +8,11 @@ Demo plugin, which injects the shell script language into each line of a YAML bl
 1. Create a new yaml file "test.yml"
 2. Paste this content:
   ```yaml
-  run: |-
-    echo hello world
-    echo hello world
+run: |-
+  echo line one
+  echo line two
+  echo line three
+
   ```
 3. Choose "Edit shell script fragment" from the context menu
 4. The fragment is displayed incorrectly
