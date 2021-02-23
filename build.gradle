@@ -10,7 +10,7 @@ repositories {
 
 intellij {
 //  version 'IC-2020.3.2'
-  version 'IC-211.5787.15-EAP-SNAPSHOT'
+  version 'IC-211.6085.26-EAP-SNAPSHOT'
   plugins = ['yaml', 'sh']
   pluginName 'YamlInjection'
 }
